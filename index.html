@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="tab.css">
+    </head>
+
+    <body>
+        <div class="tab" id="js-tab">
+            <!-- CSSはclassでJSはidで、さらに名前にjs-をつけていると他の人が読みやすい -->
+            <div class="tab-nav">
+                <a href="" class="tab-nav-item is-active" data-nav="0">Tab-0</a>
+                <a href="" class="tab-nav-item" data-nav="1">Tab-1</a>
+                <a href="" class="tab-nav-item" data-nav="2">Tab-2</a>
+                <a href="" class="tab-nav-item" data-nav="3">Tab-3</a>
+                    <!-- idは同じページに１つしか作れない。代わりにdata-○○で任意のデータ属性を作れる -->
+            </div>
+            <div class="tab-contents">
+                <div class="tab-contents-item" data-content="0">
+                    タブその0
+                </div>
+                <div class="tab-contents-item" data-content="1">
+                    タブその1
+                </div>
+                <div class="tab-contents-item" data-content="2">
+                    タブその2
+                </div>
+                <div class="tab-contents-item" data-content="3">
+                    タブその3
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="tab.js"></script>
+
+    </body>
+
+</html>
